@@ -1,2 +1,2 @@
 # 100devs-bbc-layout
-#devs homework assignment
+#100devs homework assignment
