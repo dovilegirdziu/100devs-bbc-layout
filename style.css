@@ -1,0 +1,173 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* COLORS */
+/* black and white :) */
+
+html, body {
+    /* background-color: #f3d2c1; */
+    font-family: 'Roboto', 'Roboto Mono', monospace, sans-serif;
+    /* font-size: 125%; */
+}
+
+/* NAV */
+
+header nav, nav ul {
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+}
+
+nav i {
+    padding: .5rem;
+}
+
+li {
+    list-style: none;
+    padding: .5rem 1rem;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+
+nav img {
+    height: 2rem;
+}
+
+/* MAIN */
+
+.hot-news, .other-news, .secondary-news span {
+    text-transform: uppercase;
+}
+
+section.welcome {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: .5rem .5rem .5rem 1rem;
+}
+
+.welcome h2 {
+    font-size: 1.5rem;
+}
+
+.welcome h2+h2 {
+    font-weight: 300;
+    font-size: 1.25rem;
+    color: rgb(52, 52, 52);
+}
+
+/* Main News */
+
+.hot-news {
+    padding: 10% 1rem 1rem 1rem;
+    background: linear-gradient(to right, rgba(32, 29, 29, 0.5), rgba(32, 29, 29, 0.5)), url(img/AndreaPiacquadio.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 50%;
+}
+
+.hot-news a {
+    color: white;
+    text-decoration: none;
+}
+
+.hot-news p {
+    font-size: 1rem;
+}
+
+.hot-news {
+    height: 300px;
+    width: 50%;
+    border: 10px solid transparent;
+    float: left;
+}
+
+/* SIDE NEWS */
+
+.other-news section {
+    height: 150px;
+    width: 25%;
+    border: 10px solid transparent;
+    float: left;
+    padding: 5% 1rem 1rem 1rem;
+    background: linear-gradient(to right, rgba(32, 29, 29, 0.5), rgba(32, 29, 29, 0.5)), url(img/AndreaPiacquadio2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 50%;
+}
+
+.other-news a {
+    color: white;
+    text-decoration: none;
+    font-size: .8rem;
+}
+
+/* SECONDARY NEWS */
+
+h1 {
+    padding: 1rem 0 0 1rem;
+    clear: both;
+    font-size: 1.5rem;
+}
+
+.secondary-news section {
+    height: 300px;
+    width: 33.33%;
+    border: 10px solid white;
+    float: left;
+}
+
+.secondary-news img {
+    width: 100%;
+}
+
+.secondary-news a {
+    text-decoration: none;
+    color: black;
+}
+
+.secondary-news h2 {
+    font-size: 1rem;
+}
+
+.secondary-news {
+    font-size: .8rem;
+}
+
+.secondary-news p, .secondary-news span, .secondary-news h2 {
+    margin: .5rem;
+}
+
+@media all and (max-width: 700px) {
+    nav {
+        height: 10vh;
+    }
+    nav ul, nav img {
+        display: none;
+    }
+    nav form::after {
+        width: .5rem;
+        color: aliceblue;
+        content: '- - -';
+        padding: 0 1rem;
+    }
+    .hot-news, .other-news, .secondary-news section {
+        float: none;
+        width: 90%;
+    }
+    .other-news section {
+        width: 100%;
+        margin: 1rem 0;
+    }
+    .secondary-news section {
+        height: 100%;
+    }
+}
