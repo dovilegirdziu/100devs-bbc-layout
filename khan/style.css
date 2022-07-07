@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Opwn Sans', sans-serif;
+}
+
+header {
+    height: 100px;
+    background-color: rgb(157, 206, 241); 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+ul li a{
+    padding: 0 1rem;
+    text-decoration: none;
+    color: darkmagenta;
+    display: inline-block;
+}
+
+li a::after {
+  content: '';  
+  display: block;
+  height: 4px;
+  width: 0;
+  background: magenta;
+  transition: all .5s;
+}
+
+li a:hover::after {
+    width: 100%;
+}
+
+.signup-btn {
+    padding: 1rem 1.5rem .8rem 1.5rem;
+    background:rgb(132, 28, 118);
+    /* border-radius: 6px; */
+    border-radius: 50px;
+    color: lightpink;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+main {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     /* full height minus navbar, for <main> to take up the the full width of the screen */
+     height: calc(100vh - 150px); 
+     margin: 0 5%;
+}
+
+.hero-img {
+    /* max-width: 670px;
+    height: auto; */
+    max-height: 60vh;
+    width: auto;
+}
+
+main h1 {
+    font-size: 3rem;
+    color: rgb(132, 28, 118);
+    text-transform: uppercase;
+}
+
+main h2 {
+    font-size: 1.5rem;
+    color: darkmagenta;
+    text-transform: uppercase;
+    letter-spacing: .4rem;
+    margin-top: 1rem;
+}
+
+
+main p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(125, 29, 80);
+    line-height: 1.5rem;
+    margin: 2rem 0;
+}
+
+.cta {
+    padding: 1rem 1.5rem;
+    background:rgb(132, 28, 118);
+    /* border-radius: 6px; */
+    border-radius: 50px;
+}
+
+a.cta {
+    color: lightpink;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 900px) {
+    main {
+        flex-wrap: wrap;
+        margin: 5% 5%;
+    }
+    header {
+        display: block;
+        padding-top: 2%;
+    }
+    a.signup-btn {
+        padding: .5rem .5rem .3rem .5rem;
+    }
+}
